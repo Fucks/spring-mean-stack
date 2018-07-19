@@ -1,0 +1,16 @@
+<md-content id="main-sidenav" class="md-whiteframe-15dp">
+  <div class="logo-container">
+  </div>
+  <div class="new-project-button-container">
+    <md-button class="new-project-button md-raised md-whiteframe-15dp">
+      <md-icon md-font-icon="material-icons">add</md-icon>
+      New project
+    </md-button>
+  </div>
+
+  <ul class="menu-status">
+    <li ng-repeat="menu in vm.menus">
+      <a ui-sref="{{menu.state}}" ui-sref-active="active"><md-icon md-font-icon="material-icons">{{menu.icon}}</md-icon>{{menu.category}}</a>
+    </li>
+  </ul>
+</md-content>

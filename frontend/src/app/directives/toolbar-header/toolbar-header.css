@@ -1,0 +1,11 @@
+toolbar-header{
+  height: 70px;
+  width: 100%;
+  display: inline-block;
+
+  .md-toolbar-tools{
+    background: #FFF;
+    /*height: 70px;
+    max-height: 70px*/
+  }
+}

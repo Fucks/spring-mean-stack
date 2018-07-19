@@ -1,0 +1,79 @@
+$primary-color: #696efe;
+$li-status-active: #5c5ee7;
+$fg-color: #fafefb;
+#main-sidenav{
+  height: 100%;
+  width: 200px;
+  background-color: $primary-color;
+  color: $fg-color;
+  display: inline-block;
+  padding: 20px 30px 20px 20px;
+  z-index: 2;
+
+  .logo-container{
+    margin: 15px 0;
+    width: 100%;
+    min-height: 80px;
+  }
+
+  .new-project-button-container{
+    width: 100%;
+
+    button.new-project-button{
+      width: 100%;
+      padding: 0 10px;
+      margin: 0;
+      text-transform: uppercase;
+      background-color: $fg-color;
+      text-align: center;
+      box-shadow: 0px 19px 22px -13px rgba(0, 0, 0, 0.26);
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+
+      md-icon{
+        line-height: 21px;
+        color: $primary-color;
+      }
+    }
+  }
+
+  ul.menu-status{
+    margin: 35px 0;
+    list-style: none;
+
+    position: absolute;
+    left: 0;
+    padding-left: 0;
+    width: 100%;
+
+    li{
+      height: 57px;
+      line-height: 57px;
+      font-weight: 400;
+      margin: 10px 0;
+
+      a{
+        padding: 0 22px;
+        height: 57px;
+        line-height: 57px;
+        font-size: 14px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $fg-color;
+        display: block;
+
+        md-icon{
+          color: $fg-color;
+          line-height: 23px;
+          margin-right: 8px;
+        }
+
+        &.active{
+          border-left: 2px solid $fg-color;
+          background-color: $li-status-active;
+        }
+      }
+
+    }
+  }
+}
